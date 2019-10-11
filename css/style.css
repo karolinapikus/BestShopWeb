@@ -5,8 +5,9 @@ body {
     width: 100vw;
 }
 .menu {
+    position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 20px;
 }
 .menu__container {
     margin: 0 auto;
@@ -50,7 +51,7 @@ body {
 
 }
  /*Header nav styles end*/
-
+ /*Hero section styling */
 
  .main__container {
     background-image: url("../assets/Background.png");
@@ -62,9 +63,9 @@ body {
 
 }
  .main__top__content {
-     margin: 0 auto;
-     width: 1352;
-     height: 50vh;
+     margin: 50px auto;
+     width: 1352px;
+     height: 40vh;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -75,7 +76,6 @@ body {
  .main__top__content h1 {
     font-family: "Raleway";
     font-size: 49px;
-
  }
 
  .margin__top__content {
@@ -86,18 +86,157 @@ body {
  }
 
  .main__top__button {
-    display: block;
-    margin: auto;
     width: 440px;
     height: 67px;
-    background: #08A6E4 0% 0% no-repeat padding-box;
+    background: #08A6E4;
     box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 40px;
+    border: none;
+ }
+
+ .main__top__button a {
     color: #ffffff;
-    text-decoration: none;
     font-family: "Open Sans";
     font-weight: 600;
-    border-radius: 40px;
-    opacity: 1;
     text-align: center;
-    align-content: center;
+    text-decoration: none;
+ }
+ /* End of hero section styling */
+ /* Counter section styling */
+
+ .counter {
+    margin: 20px auto;
+    width: 1352px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .counter h2 {
+     font-family: "Raleway";
+     font-size: 36px;
+     color: #000000;
+ }
+
+ .counter p {
+    font-family: "Raleway";
+    font-size: 16px;
+    color: #A5A5A5;
+}
+
+ .counter__items {
+    margin: 20px auto;
+    width: 1352px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .counter__items__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .icon__man::before{
+     content: "";
+     display: block;
+     background-image: url("../assets/Person.svg");
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 44px;
+     height: 52px;
+     position: absolute;
+     right: -10px;
+ }
+
+ .icon__man {
+    background: #FB3B64;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+ }
+
+ .icon__eye::before{
+     content: "";
+     display: block;
+     background-image: url("../assets/Eye.svg");
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 65px;
+     height: 36px;
+     position: absolute;
+     top: 13px;
+     right: -30px;
+ }
+
+ .icon__eye {
+    background: #08A6E4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+ }
+
+ .icon__file::before{
+    content: "";
+    display: block;
+    background-image: url("../assets/Catalog.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 48px;
+    position: absolute;
+    top: 7px;
+    right: -20px;
+}
+
+.icon__file {
+    background: #55DFB4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+ }
+
+ /* End of counter section styling */
+
+ .features {
+     background: #F7F7F7;
+ }
+
+ .features__container {
+     margin: 0 auto;
+     width: 1352px;
+     height: 150vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .photo__desktop {
+    width: 255px;
+    height: 255px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    background: #FB3B64;
+    border-radius: 41px;
+ }
+
+ .feature__box {
+     background: white;
+     border: 1px solid #E8E9ED;
+    border-radius: 5px;
+     width: 1352px;
+     height: 370px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
  }
