@@ -4,7 +4,10 @@ body {
     font-weight: 400;
     width: 100vw;
 }
-
+.menu {
+    position: sticky;
+    top: 0;
+}
 .menu__container {
     margin: 0 auto;
     width: 100vw;
@@ -41,7 +44,60 @@ body {
 .menu__links a:hover, .menu__links a:active{
     text-decoration: none;
     color: #000000;
+    padding-bottom: 25px;
     border-bottom: 4px solid #08A6E4;
     opacity: 1;
 
 }
+ /*Header nav styles end*/
+
+
+ .main__container {
+    background-image: url("../assets/Background.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 840px;
+    width: 100vw;
+
+}
+ .main__top__content {
+     margin: 0 auto;
+     width: 1352;
+     height: 50vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+
+ .main__top__content h1 {
+    font-family: "Raleway";
+    font-size: 49px;
+
+ }
+
+ .margin__top__content {
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .main__top__button {
+    display: block;
+    margin: auto;
+    width: 440px;
+    height: 67px;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-weight: 600;
+    border-radius: 40px;
+    opacity: 1;
+    text-align: center;
+    align-content: center;
+ }
