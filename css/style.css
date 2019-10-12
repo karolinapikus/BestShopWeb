@@ -100,12 +100,14 @@ h2 {
     background: #08A6E4;
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
-    border: none;
+    text-align: center;
+    line-height: 4em;
  }
 
  .main__top__button a {
     color: #ffffff;
     font-family: "Open Sans";
+
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -361,6 +363,7 @@ h2 {
 
 .pricing {
     width: 1352px;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -368,11 +371,10 @@ h2 {
     margin: 0 auto;
 }
 
-.pricing_elements {
+.pricing__elements {
     margin: 0 auto;
     width: 1352px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
