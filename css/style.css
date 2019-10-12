@@ -1,9 +1,16 @@
 body {
     color: #000000;
+    background-color: #ffffff;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 400;
     width: 100vw;
 }
+
+h2 {
+    font-family: "Raleway";
+    font-size: 36px;
+}
+
 .menu {
     position: -webkit-sticky;
     position: sticky;
@@ -26,13 +33,12 @@ body {
     color: #08A6E4;
     font-size: 32px;
     font-weight: 300;
-
 }
 
 .menu__links {
     display: flex;
-
 }
+
 .menu__links li{
     margin-right: 95px;
     text-transform: uppercase;
@@ -63,13 +69,13 @@ body {
 
 }
  .main__top__content {
-     margin: 50px auto;
-     width: 1352px;
-     height: 40vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-evenly;
+    margin: 50px auto;
+    width: 1352px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
  }
 
 
@@ -86,6 +92,9 @@ body {
  }
 
  .main__top__button {
+    color: #fff;
+    text-decoration: none;
+    display: block;
     width: 440px;
     height: 67px;
     background: #08A6E4;
@@ -114,12 +123,6 @@ body {
     justify-content: space-around;
  }
 
- .counter h2 {
-     font-family: "Raleway";
-     font-size: 36px;
-     color: #000000;
- }
-
  .counter p {
     font-family: "Raleway";
     font-size: 16px;
@@ -142,16 +145,16 @@ body {
  }
 
  .icon__man::before{
-     content: "";
-     display: block;
-     background-image: url("../assets/Person.svg");
-     background-size: contain;
-     background-position: center;
-     background-repeat: no-repeat;
-     width: 44px;
-     height: 52px;
-     position: absolute;
-     right: -10px;
+    content: "";
+    display: block;
+    background-image: url("../assets/Person.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 52px;
+    position: absolute;
+    right: -10px;
  }
 
  .icon__man {
@@ -207,36 +210,171 @@ body {
  }
 
  /* End of counter section styling */
+ /* Features section styling */
 
  .features {
-     background: #F7F7F7;
- }
-
- .features__container {
-     margin: 0 auto;
-     width: 1352px;
-     height: 150vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     align-items: center;
- }
-
- .photo__desktop {
-    width: 255px;
-    height: 255px;
-    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-    background: #FB3B64;
-    border-radius: 41px;
+    background: #F7F7F7;
+    display: flex;
+    height: 110vh;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
  }
 
  .feature__box {
-     background: white;
-     border: 1px solid #E8E9ED;
+    background:#ffffff;
+    margin: 0 auto;
+    height: 370px;
+    width: 1352px;
+    border: 1px solid #E8E9ED;
     border-radius: 5px;
-     width: 1352px;
-     height: 370px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
  }
+
+ .features h2{
+    margin-bottom: 50px;
+ }
+
+ .features .line {
+    margin-top: 50px;
+    width: 328px;
+    height: 4px;
+    display: block;
+ }
+
+.line__red {
+    background: #FB3B64;
+ }
+
+ .line__blue {
+    background: #08A6E4;
+ }
+
+ .line__green {
+    background: #55DFB4;
+ }
+
+ .feature__content {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 40px;
+    width: 416px;
+ }
+.feature__image{
+    width: 433px;
+}
+ .feature__image div:first-of-type{
+    position: absolute;
+ }
+ .feature__image div:last-of-type{
+    position: relative;
+ }
+
+.macbook {
+    background-image: url("../assets/Macbook.png");
+    width: 386px;
+    height: 219px;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.macbook__shape {
+    display: block;
+    z-index: 0;
+    top: -50px;
+    right: -200px;
+    background: #FB3B64;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    border-radius: 41px;
+    width: 180px;
+    height: 180px;
+}
+
+.phone {
+    background-image: url("../assets/iPhone.png");
+    width: 426px;
+    height: 328px;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.phone__shape {
+    display: block;
+    z-index: 0;
+    top: -10px;
+    background: #07ACE6;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+}
+
+.feature__separated {
+    margin: 0 auto;
+    width: 1352px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.feature__separated__content {
+    background:#ffffff;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.trumpet {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #55DFB4;
+    margin-left: 50px;
+    border: 1px solid #E8E9ED;
+    width: 40%;
+}
+.feature__separated__content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 370px;
+    margin: auto 40px;
+}
+
+.trumpet > div {
+    background-image: url("../assets/Trumpet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 281px;
+}
+
+/* End of features section styling */
+/* Pricing table styling */
+
+.pricing {
+    width: 1352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pricing_elements {
+    margin: 0 auto;
+    width: 1352px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*End of pricing styling */
