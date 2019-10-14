@@ -123,7 +123,7 @@ h2 {
 .counter {
     margin: 20px auto;
     width: 1352px;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +229,6 @@ h2 {
 .features {
     background: #F7F7F7;
     display: flex;
-    height: 110vh;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-around;
@@ -238,7 +237,7 @@ h2 {
 
 .feature__box {
     background:#ffffff;
-    margin: 0 auto;
+    margin: 20px auto;
     height: 370px;
     width: 1352px;
     border: 1px solid #E8E9ED;
@@ -335,7 +334,7 @@ h2 {
 .feature__separated {
     margin: 0 auto;
     width: 1352px;
-    height: 370px;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
 
@@ -379,7 +378,6 @@ h2 {
 
 .pricing {
     width: 1352px;
-    height: 52vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -388,7 +386,7 @@ h2 {
 }
 
 .pricing__elements {
-    margin: 0 auto;
+    margin: 30px auto;
     width: 1352px;
     display: flex;
     justify-content: space-between;
