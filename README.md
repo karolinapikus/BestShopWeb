@@ -1,9 +1,9 @@
-# Workshop 1 - BestShop one-page website
+# BestShop one-page website
 
 This is my project for first workshop on my CodersLab programming course. Coded from skratch, based on delivered .XD project.
 
 ## Technologies used
-HTML5 + CSS
+HTML5 + CSS3
 
 ## Fonts used
 Raleway, Open Sans - Google Fonts Repository</br>
